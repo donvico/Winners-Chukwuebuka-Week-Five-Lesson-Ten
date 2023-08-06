@@ -27,5 +27,26 @@ const ekuke = new Dog('rottweiler', 'yellow', '40kg', 'yes')
 const bingo = new Dog('labrador', 'black', '30kg', 'yes')
 const jack = new Dog('chihuahua', 'white', '20kg', 'yes')
 
+const bark = document.getElementById("bark");
+const run = document.getElementById("run");
+const getAngry = document.getElementById("getangry");
+const wiggleTail = document.getElementById("wiggletail");
+const statement = document.getElementById("status");
+
+
+bark.addEventListener("click", () =>content(ekuke.bark()));
+run.addEventListener("click", () => content(bingo.run()));
+getAngry.addEventListener("click", () => content(jack.getAngry()));
+wiggleTail.addEventListener("click", () => content(ekuke.wiggleTail()));
+
+function content (status) {
+  statement.innerText = status;
+}
+
+
+
+
+
+
 
 
