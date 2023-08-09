@@ -39,9 +39,11 @@ run.addEventListener("click", () => content(bingo.run()));
 getAngry.addEventListener("click", () => content(jack.getAngry()));
 wiggleTail.addEventListener("click", () => content(ekuke.wiggleTail()));
 
+
 function content (status) {
   statement.innerText = status;
 }
+content()
 
 
 
